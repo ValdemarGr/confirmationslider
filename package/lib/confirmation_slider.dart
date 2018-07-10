@@ -53,6 +53,8 @@ class ConfirmationSliderState extends State<ConfirmationSlider> {
         if (valueListener.value == getMaxPush(context)) {
           widget.confirmation();
         }
+
+        valueListener.value = 0.0;
       },
       onHorizontalDragUpdate: (details) {
         valueListener.value = (valueListener.value +

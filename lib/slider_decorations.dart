@@ -13,7 +13,7 @@ class SliderDecorations {
     );
   }
 
-  static Decoration roundedRectangleImage(Color color, double height, ImageProvider image) {
+  static Decoration roundedRectangleImage(double height, ImageProvider image) {
     return new ShapeDecoration(
       image: new DecorationImage(
         image: image

@@ -15,10 +15,13 @@ class ConfirmationSlider extends StatefulWidget {
     this.height = 50.0,
     this.horizontalMargin = 50.0,
     this.valueChanged,
+    this.consumes = false,
+    @required
     this.decoration,
+    @required
     this.confirmation,
+    @required
     this.slideIcon,
-    this.consumes = false
   });
 
   @override
@@ -53,6 +56,8 @@ class ConfirmationSliderState extends State<ConfirmationSlider> {
         if (valueListener.value == getMaxPush(context)) {
           widget.confirmation();
         }
+
+        valueListener.value = 0.0;
       },
       onHorizontalDragUpdate: (details) {
         valueListener.value = (valueListener.value +
