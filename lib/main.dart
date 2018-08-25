@@ -24,11 +24,12 @@ class MyApp extends StatelessWidget {
               height: 100.0,
               //slideIcon: SliderIcon.roundSliderColor(10.0, 50.0, Colors.red),
               slideIcon: SliderIcon.roundSliderImage(20.0, 100.0, NetworkImage("https://i.imgur.com/oK7nESn.png")),
-              decoration: SliderDecorations.roundedRectangleColor(Colors.orange, 100.0),
               confirmation: () {
                 print('hello!');
               },
               consumes: true,
+              background: (child) => Container(child: child, color: Colors.black,), // (child) => Widget(child: child)
+              slidebackDuration: Duration(milliseconds: 100),
             ),
           ],
         ),
