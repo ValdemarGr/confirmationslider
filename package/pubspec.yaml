@@ -1,11 +1,11 @@
 name: confirmationslider
 description: A confirmation slider package.
-version: 2.0.0
+version: 2.1.0
 author: ValdemarGr <randomvald0069@gmail.com>
 homepage: https://imada.sdu.dk/~sagra16/
 
 environment:
-    sdk: ">=1.19.0 <2.0.0"
+    sdk: ">=1.19.0 <3.0.0"
 
 dependencies:
   flutter:
