@@ -3,7 +3,7 @@ library slider_icons;
 import 'package:flutter/material.dart';
 
 class SliderIcon{
-  static Widget roundSliderColor(double borderSize, double sliderHeight, Color color){
+  static Widget roundSliderColor(double borderSize, double sliderHeight, Color color, [Widget c]){
     return new Container(
       margin: EdgeInsets.all(borderSize / 2),
       width: sliderHeight - borderSize,
@@ -12,6 +12,7 @@ class SliderIcon{
         color: color,
         shape: BoxShape.circle
       ),
+      child: c
     );
   }
 
